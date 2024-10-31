@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Support\ValueSerializers;
+namespace AgentSoftware\Settings\Support\ValueSerializers;
 
+use AgentSoftware\Settings\Contracts\ValueSerializer as ValueSerializerContract;
 use Illuminate\Support\Arr;
-use Rawilk\Settings\Contracts\ValueSerializer as ValueSerializerContract;
 
 class ValueSerializer implements ValueSerializerContract
 {

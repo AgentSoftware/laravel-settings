@@ -63,7 +63,7 @@ return [
     | is used by your application. A default configuration has been added
     | for each back-end shipped with this package. You are free to add more.
     |
-    | Each driver you add must implement the \Rawilk\Settings\Contracts\Driver interface.
+    | Each driver you add must implement the \AgentSoftware\Settings\Contracts\Driver interface.
     |
     */
     'drivers' => [
@@ -76,42 +76,42 @@ return [
 
             /*
              * You can use any model you like for the setting, but it needs to implement
-             * the \Rawilk\Settings\Contracts\Setting interface.
+             * the \AgentSoftware\Settings\Contracts\Setting interface.
              */
-            'model' => \Rawilk\Settings\Models\Setting::class,
+            'model' => \AgentSoftware\Settings\Models\Setting::class,
         ],
     ],
 
     /*
     |--------------------------------------------------------------------------
-    | Teams
+    | Morphs
     |--------------------------------------------------------------------------
     |
-    | When set to true the package implements teams using the `team_foreign_key`.
+    | When set to true the package implements morphs on the settings`.
     |
-    | If you want the migrations to register the `team_foreign_key`, you must
+    | If you want the migrations to register the morphs, you must
     | set this to true before running the migration.
     |
     | If you already ran the migrations, then you must make a new migration to
-    | add the `team_foreign_key` column to the settings table, and update the
-    | unique constraint on the table. See the `add_settings_team_field` migration
+    | add the morphs columns to the settings table, and update the
+    | unique constraint on the table. See the `add_settings_morphs_fields` migration
     | for how to do this.
     |
     */
-    'teams' => false,
+    'morphs' => false,
 
     /*
     |--------------------------------------------------------------------------
-    | Team Foreign Key
+    | Morph name
     |--------------------------------------------------------------------------
     |
-    | When teams is set to true, our database/eloquent drivers will use this
-    | column as a team foreign key to scope queries to.
+    | When morphs is set to true, our database/eloquent drivers will use this
+    | name for columns to scope queries to.
     |
-    | The team id will also be included in a cache key when caching is enabled.
+    | The morphs will also be included in a cache key when caching is enabled.
     |
     */
-    'team_foreign_key' => 'team_id',
+    'morph_name' => 'model',
 
     /*
     |--------------------------------------------------------------------------
@@ -122,14 +122,14 @@ return [
     | into a string, which gets appended to a setting key in the database.
     |
     | Any custom serializer you use must implement the
-    | \Rawilk\Settings\Contracts\ContextSerializer interface.
+    | \AgentSoftware\Settings\Contracts\ContextSerializer interface.
     |
     | Supported:
-    | - \Rawilk\Settings\Support\ContextSerializers\ContextSerializer (default)
-    | - \Rawilk\Settings\Support\ContextSerializers\DotNotationContextSerializer
+    | - \AgentSoftware\Settings\Support\ContextSerializers\ContextSerializer (default)
+    | - \AgentSoftware\Settings\Support\ContextSerializers\DotNotationContextSerializer
     |
     */
-    'context_serializer' => \Rawilk\Settings\Support\ContextSerializers\ContextSerializer::class,
+    'context_serializer' => \AgentSoftware\Settings\Support\ContextSerializers\ContextSerializer::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -140,15 +140,15 @@ return [
     | setting.
     |
     | Any custom key generator you use must implement the
-    | \Rawilk\Settings\Contracts\KeyGenerator interface.
+    | \AgentSoftware\Settings\Contracts\KeyGenerator interface.
     |
     | Supported:
-    | - \Rawilk\Settings\Support\KeyGenerators\ReadableKeyGenerator
-    | - \Rawilk\Settings\Support\KeyGenerators\Md5KeyGenerator (default)
-    | - \Rawilk\Settings\Support\KeyGenerators\HashKeyGenerator
+    | - \AgentSoftware\Settings\Support\KeyGenerators\ReadableKeyGenerator
+    | - \AgentSoftware\Settings\Support\KeyGenerators\Md5KeyGenerator (default)
+    | - \AgentSoftware\Settings\Support\KeyGenerators\HashKeyGenerator
     |
     */
-    'key_generator' => \Rawilk\Settings\Support\KeyGenerators\Md5KeyGenerator::class,
+    'key_generator' => \AgentSoftware\Settings\Support\KeyGenerators\Md5KeyGenerator::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -160,10 +160,10 @@ return [
     | instead if you want to store the values as json instead.
     |
     | Any custom value serializer you use must implement the
-    | \Rawilk\Settings\Contracts\ValueSerializer interface.
+    | \AgentSoftware\Settings\Contracts\ValueSerializer interface.
     |
     */
-    'value_serializer' => \Rawilk\Settings\Support\ValueSerializers\ValueSerializer::class,
+    'value_serializer' => \AgentSoftware\Settings\Support\ValueSerializers\ValueSerializer::class,
 
     /*
     |--------------------------------------------------------------------------

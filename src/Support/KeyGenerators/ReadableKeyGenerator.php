@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Support\KeyGenerators;
+namespace AgentSoftware\Settings\Support\KeyGenerators;
 
+use AgentSoftware\Settings\Contracts\ContextSerializer;
+use AgentSoftware\Settings\Contracts\KeyGenerator as KeyGeneratorContract;
+use AgentSoftware\Settings\Support\Context;
 use Illuminate\Support\Str;
-use Rawilk\Settings\Contracts\ContextSerializer;
-use Rawilk\Settings\Contracts\KeyGenerator as KeyGeneratorContract;
-use Rawilk\Settings\Support\Context;
 
 class ReadableKeyGenerator implements KeyGeneratorContract
 {

@@ -8,7 +8,7 @@ sort: 3
 laravel-settings can be installed via composer:
 
 ```bash
-composer require rawilk/laravel-settings
+composer require agentsoftware/laravel-settings
 ```
 
 ## Migrations
@@ -44,7 +44,7 @@ allowing the package to search for settings easier by key, and partial searches 
 
 ```php
 // config/settings.php
-'key_generator' => \Rawilk\Settings\Support\KeyGenerators\ReadableKeyGenerator::class,
+'key_generator' => \AgentSoftware\Settings\Support\KeyGenerators\ReadableKeyGenerator::class,
 ```
 
 For more information on the key generators, see the [Custom Generators](/docs/laravel-settings/{version}/advanced-usage/custom-generators) documentation.

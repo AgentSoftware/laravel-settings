@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Facades;
+namespace AgentSoftware\Settings\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Rawilk\Settings\Settings
+ * @see \AgentSoftware\Settings\Settings
  *
- * @method static \Rawilk\Settings\Settings context(null|\Rawilk\Settings\Support\Context $context = null)
+ * @method static \AgentSoftware\Settings\Settings context(null|\AgentSoftware\Settings\Support\Context $context = null)
  * @method static null|mixed forget(string|\BackedEnum $key)
  * @method static mixed get(string|\BackedEnum $key, null|mixed $default = null)
  * @method static \Illuminate\Support\Collection all($keys)
@@ -23,20 +23,20 @@ use Illuminate\Support\Facades\Facade;
  * @method static self temporarilyDisableCache()
  * @method static self disableEncryption()
  * @method static self enableEncryption()
- * @method static null|mixed getTeamId()
- * @method static self setTeamId(mixed $id)
- * @method static self enableTeams()
- * @method static self disableTeams()
- * @method static bool teamsAreEnabled()
- * @method static self usingTeam(mixed $teamId)
- * @method static self withoutTeams()
- * @method static \Rawilk\Settings\Contracts\KeyGenerator getKeyGenerator()
+ * @method static null|mixed getMorphId()
+ * @method static self setMorphs(mixed $id, mixed $morphType = null)
+ * @method static self enableMorphs()
+ * @method static self disableMorphs()
+ * @method static bool morphsAreEnabled()
+ * @method static self usingMorph(mixed $morphId, mixed $morphType = null)
+ * @method static self withoutMorphs()
+ * @method static \AgentSoftware\Settings\Contracts\KeyGenerator getKeyGenerator()
  * @method static string cacheKeyForSetting(string $key)
  */
 class Settings extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Rawilk\Settings\Settings::class;
+        return \AgentSoftware\Settings\Settings::class;
     }
 }

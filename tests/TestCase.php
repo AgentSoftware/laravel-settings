@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Tests;
+namespace AgentSoftware\Settings\Tests;
 
+use AgentSoftware\Settings\SettingsServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Rawilk\Settings\SettingsServiceProvider;
 
 class TestCase extends Orchestra
 {

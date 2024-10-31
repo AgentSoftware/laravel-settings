@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Support\KeyGenerators;
+namespace AgentSoftware\Settings\Support\KeyGenerators;
 
-use Rawilk\Settings\Contracts\ContextSerializer;
-use Rawilk\Settings\Contracts\KeyGenerator as KeyGeneratorContract;
-use Rawilk\Settings\Support\Context;
+use AgentSoftware\Settings\Contracts\ContextSerializer;
+use AgentSoftware\Settings\Contracts\KeyGenerator as KeyGeneratorContract;
+use AgentSoftware\Settings\Support\Context;
 use RuntimeException;
 
 class HashKeyGenerator implements KeyGeneratorContract

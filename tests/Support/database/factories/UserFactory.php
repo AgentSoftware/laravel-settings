@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Tests\Support\database\factories;
+namespace AgentSoftware\Settings\Tests\Support\database\factories;
 
+use AgentSoftware\Settings\Tests\Support\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Rawilk\Settings\Tests\Support\Models\User;
 
 /**
- * @extends Factory<\Rawilk\Settings\Tests\Support\Models\User>
+ * @extends Factory<\AgentSoftware\Settings\Tests\Support\Models\User>
  */
 final class UserFactory extends Factory
 {

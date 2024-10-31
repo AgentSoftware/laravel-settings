@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Tests\Support\Models;
+namespace AgentSoftware\Settings\Tests\Support\Models;
 
 final class CustomUser extends User
 {
