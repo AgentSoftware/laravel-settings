@@ -2,37 +2,37 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Tests\Support\Drivers;
+namespace AgentSoftware\Settings\Tests\Support\Drivers;
 
+use AgentSoftware\Settings\Contracts\Driver;
 use Illuminate\Contracts\Support\Arrayable;
-use Rawilk\Settings\Contracts\Driver;
 
 final class CustomDriver implements Driver
 {
-    public function forget($key, $teamId = null): void
+    public function forget($key, $morphId = null, $morphType = null): void
     {
         //
     }
 
-    public function get(string $key, $default = null, $teamId = null)
+    public function get(string $key, $default = null, $morphId = null, $morphType = null)
     {
         return $default;
     }
 
-    public function has($key, $teamId = null): bool
+    public function has($key, $morphId = null, $morphType = null): bool
     {
         return true;
     }
 
-    public function set(string $key, $value = null, $teamId = null): void
+    public function set(string $key, $value = null, $morphId = null, $morphType = null): void
     {
         //
     }
 
-    public function all($teamId = null, $keys = null): array|Arrayable
+    public function all($morphId = null, $morphType = null, $keys = null): array|Arrayable
     {
         return [];
     }
 
-    public function flush($teamId = null, $keys = null): void {}
+    public function flush($morphId = null, $keys = null, $morphType = null): void {}
 }

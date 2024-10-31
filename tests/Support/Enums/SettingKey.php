@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Tests\Support\Enums;
+namespace AgentSoftware\Settings\Tests\Support\Enums;
 
 enum SettingKey: string
 {

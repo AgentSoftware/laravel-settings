@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
+use AgentSoftware\Settings\Facades\Settings;
+use AgentSoftware\Settings\Tests\TestCase;
 use Illuminate\Support\Facades\DB;
-use Rawilk\Settings\Facades\Settings;
-use Rawilk\Settings\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 
@@ -31,8 +31,8 @@ function migrateTestTables(): void
     $migration->up();
 }
 
-function migrateTeams(): void
+function migrateMorphs(): void
 {
-    $migration = include __DIR__ . '/../database/migrations/add_settings_team_field.php.stub';
+    $migration = include __DIR__ . '/../database/migrations/add_settings_morphs_fields.php.stub';
     $migration->up();
 }

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use Rawilk\Settings\Support\Context;
-use Rawilk\Settings\Support\ContextSerializers\ContextSerializer;
-use Rawilk\Settings\Support\ContextSerializers\DotNotationContextSerializer;
-use Rawilk\Settings\Support\KeyGenerators\Md5KeyGenerator;
+use AgentSoftware\Settings\Support\Context;
+use AgentSoftware\Settings\Support\ContextSerializers\ContextSerializer;
+use AgentSoftware\Settings\Support\ContextSerializers\DotNotationContextSerializer;
+use AgentSoftware\Settings\Support\KeyGenerators\Md5KeyGenerator;
 
 beforeEach(function () {
     $this->keyGenerator = (new Md5KeyGenerator)

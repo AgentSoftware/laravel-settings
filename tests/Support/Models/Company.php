@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Tests\Support\Models;
+namespace AgentSoftware\Settings\Tests\Support\Models;
 
+use AgentSoftware\Settings\Models\HasSettings;
+use AgentSoftware\Settings\Tests\Support\database\factories\CompanyFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Rawilk\Settings\Models\HasSettings;
-use Rawilk\Settings\Tests\Support\database\factories\CompanyFactory;
 
 final class Company extends Model
 {

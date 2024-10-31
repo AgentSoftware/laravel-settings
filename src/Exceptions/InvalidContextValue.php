@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Exceptions;
+namespace AgentSoftware\Settings\Exceptions;
 
 use Exception;
 

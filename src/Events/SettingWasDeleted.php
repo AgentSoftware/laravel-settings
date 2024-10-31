@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Events;
+namespace AgentSoftware\Settings\Events;
 
+use AgentSoftware\Settings\Support\Context;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Rawilk\Settings\Support\Context;
 
 final class SettingWasDeleted
 {
@@ -17,7 +17,8 @@ final class SettingWasDeleted
         public string $key,
         public string $storageKey,
         public string $cacheKey,
-        public mixed $teamId,
+        public mixed $morphId,
+        public mixed $morphType,
         public bool|Context|null $context,
     ) {}
 }

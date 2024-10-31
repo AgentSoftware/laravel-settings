@@ -10,8 +10,8 @@ sort: 1
  * Set the context for the current operation.
  * Omit or set $context to null to remove context.
  *
- * @param \Rawilk\Settings\Support\Context|null $context
- * @return \Rawilk\Settings\Settings
+ * @param \AgentSoftware\Settings\Support\Context|null $context
+ * @return \AgentSoftware\Settings\Settings
  */
 public function context(Context $context = null): self
 ```

@@ -4,7 +4,7 @@ sort: 2
 ---
 
 Laravel Settings ships with an Eloquent model for Settings already, but you are free to use your own model. You can either extend
-the package's model, or create your own. The only requirement is that it implements the `Rawilk\Settings\Contracts\Setting` interface.
+the package's model, or create your own. The only requirement is that it implements the `AgentSoftware\Settings\Contracts\Setting` interface.
 
 Here is what the interface looks like:
 
@@ -13,7 +13,7 @@ Here is what the interface looks like:
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Contracts;
+namespace AgentSoftware\Settings\Contracts;
 
 use Illuminate\Contracts\Support\Arrayable;
 

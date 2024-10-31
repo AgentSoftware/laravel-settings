@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-use Rawilk\Settings\Settings;
-use Rawilk\Settings\Support\Context;
+use AgentSoftware\Settings\Settings;
+use AgentSoftware\Settings\Support\Context;
 
 if (! function_exists('settings')) {
     function settings($key = null, $default = null, $context = null)
     {
-        /** @var \Rawilk\Settings\Settings $settings */
+        /** @var \AgentSoftware\Settings\Settings $settings */
         $settings = app(Settings::class);
 
         // If nothing is passed in to the function, simply return the settings instance.

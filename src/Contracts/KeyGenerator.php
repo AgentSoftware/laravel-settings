@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Contracts;
+namespace AgentSoftware\Settings\Contracts;
 
-use Rawilk\Settings\Support\Context;
+use AgentSoftware\Settings\Support\Context;
 
 interface KeyGenerator
 {

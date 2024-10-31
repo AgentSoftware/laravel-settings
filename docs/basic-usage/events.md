@@ -16,12 +16,12 @@ with the current team id and context object.
 Here is the signature of the event:
 
 ```php
-namespace Rawilk\Settings\Events;
+namespace AgentSoftware\Settings\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Collection;
-use Rawilk\Settings\Support\Context;
+use AgentSoftware\Settings\Support\Context;
 
 final class SettingsFlushed
 {
@@ -45,11 +45,11 @@ along with the current team id and context object. The event will also receive t
 Here is the signature of the event:
 
 ```php
-namespace Rawilk\Settings\Events;
+namespace AgentSoftware\Settings\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Rawilk\Settings\Support\Context;
+use AgentSoftware\Settings\Support\Context;
 
 final class SettingWasDeleted
 {
@@ -77,7 +77,7 @@ Here is the signature of the event:
 ```php
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Rawilk\Settings\Support\Context;
+use AgentSoftware\Settings\Support\Context;
 
 final class SettingWasStored
 {

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Drivers;
+namespace AgentSoftware\Settings\Drivers;
 
+use AgentSoftware\Settings\Contracts\Driver;
+use AgentSoftware\Settings\Contracts\Setting as SettingContract;
 use Closure;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Arr;
 use InvalidArgumentException;
-use Rawilk\Settings\Contracts\Driver;
-use Rawilk\Settings\Contracts\Setting as SettingContract;
 
 class Factory
 {
@@ -41,7 +41,7 @@ class Factory
         return new DatabaseDriver(
             connection: $this->app['db']->connection(Arr::get($config, 'connection')),
             table: $this->app['config']['settings.table'],
-            teamForeignKey: $this->app['config']['settings.team_foreign_key'] ?? null,
+            morphName: $this->app['config']['settings.morph_name'] ?? null,
         );
     }
 

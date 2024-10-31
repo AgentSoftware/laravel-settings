@@ -40,7 +40,7 @@ Example Team Middleware:
 ```php
 namespace App\Http\Middleware;
 
-use Rawilk\Settings\Facades\Settings;
+use AgentSoftware\Settings\Facades\Settings;
 
 class TeamMiddleware
 {
@@ -122,8 +122,8 @@ Let's say the user has a timezone configured differently for each tenant. In ten
 the timezone is set to 'America/Chicago' for the user. Here's how you can combine context and teams to get those different setting values.
 
 ```php
-use Rawilk\Settings\Support\Context;
-use Rawilk\Settings\Facades\Settings;
+use AgentSoftware\Settings\Support\Context;
+use AgentSoftware\Settings\Facades\Settings;
 
 $userContext = new Context(['user_id' => 1]);
 
