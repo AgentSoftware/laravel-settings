@@ -2,6 +2,20 @@
 
 All notable changes to `laravel-settings` will be documented in this file
 
+## 4.0.0 - 2026-04-01
+
+### What's Changed
+
+* Add Laravel 13.x support by @evan-burrell in https://github.com/AgentSoftware/laravel-settings/pull/1
+* Rebrand package from rawilk to agentsoftware by @evan-burrell in https://github.com/AgentSoftware/laravel-settings/pull/2
+* Add PHP 8.5 support by @evan-burrell in https://github.com/AgentSoftware/laravel-settings/pull/3
+
+### New Contributors
+
+* @evan-burrell made their first contribution in https://github.com/AgentSoftware/laravel-settings/pull/1
+
+**Full Changelog**: https://github.com/AgentSoftware/laravel-settings/commits/4.0.0
+
 ## v3.4.1 - 2025-02-25
 
 ### What's Changed
@@ -161,7 +175,7 @@ All notable changes to `laravel-settings` will be documented in this file
 
 ### Updated
 
-- Add support for Laravel 9.\*
+- Add support for Laravel 9.*
 - Add support for PHP 8.1
 
 ## 2.0.0 - 2020-12-01
