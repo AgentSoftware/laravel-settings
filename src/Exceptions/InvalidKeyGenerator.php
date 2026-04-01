@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Exceptions;
+namespace AgentSoftware\Settings\Exceptions;
 
+use AgentSoftware\Settings\Support\KeyGenerators\ReadableKeyGenerator;
 use Exception;
-use Rawilk\Settings\Support\KeyGenerators\ReadableKeyGenerator;
 
 final class InvalidKeyGenerator extends Exception
 {

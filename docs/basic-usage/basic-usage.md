@@ -5,7 +5,7 @@ sort: 1
 
 ## Introduction
 
-You can interact with settings via the `Settings` facade, or by using the `settings()` helper function, which returns an instance of `Rawilk\Settings\Settings`.
+You can interact with settings via the `Settings` facade, or by using the `settings()` helper function, which returns an instance of `AgentSoftware\Settings\Settings`.
 
 ## Setting a value
 
@@ -60,7 +60,7 @@ by passing in an array of keys to retrieve.
 
 > {note} Either the `ReadableKeyGenerator` or a custom key generator must be configured to be used before this method can be used.
 > See [KeyGenerator docs](/docs/laravel-settings/{version}/advanced-usage/custom-generators#user-content-keygenerator) for more information.
-> 
+>
 > In a future major release, the `ReadableKeyGenerator` may be set to be the default key generator.
 
 ```php

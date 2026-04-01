@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Drivers;
+namespace AgentSoftware\Settings\Drivers;
 
+use AgentSoftware\Settings\Contracts\Driver;
+use AgentSoftware\Settings\Facades\Settings;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Collection;
-use Rawilk\Settings\Contracts\Driver;
-use Rawilk\Settings\Facades\Settings;
 
 class DatabaseDriver implements Driver
 {

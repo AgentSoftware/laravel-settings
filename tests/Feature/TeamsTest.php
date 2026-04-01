@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
+use AgentSoftware\Settings\Facades\Settings as SettingsFacade;
+use AgentSoftware\Settings\Support\Context;
+use AgentSoftware\Settings\Support\ContextSerializers\DotNotationContextSerializer;
+use AgentSoftware\Settings\Support\KeyGenerators\ReadableKeyGenerator;
+use AgentSoftware\Settings\Tests\Support\Models\Team;
 use Illuminate\Support\Facades\DB;
-use Rawilk\Settings\Facades\Settings as SettingsFacade;
-use Rawilk\Settings\Support\Context;
-use Rawilk\Settings\Support\ContextSerializers\DotNotationContextSerializer;
-use Rawilk\Settings\Support\KeyGenerators\ReadableKeyGenerator;
-use Rawilk\Settings\Tests\Support\Models\Team;
 
 beforeEach(function () {
     config([

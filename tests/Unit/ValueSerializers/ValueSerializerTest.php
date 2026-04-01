@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
+use AgentSoftware\Settings\Support\ValueSerializers\ValueSerializer;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Date;
-use Rawilk\Settings\Support\ValueSerializers\ValueSerializer;
 
 it('serializes values', function (mixed $value) {
     $serializer = new ValueSerializer;

@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Rawilk\Settings\Facades\Settings as SettingsFacade;
-use Rawilk\Settings\Settings;
+use AgentSoftware\Settings\Facades\Settings as SettingsFacade;
+use AgentSoftware\Settings\Settings;
 
 beforeEach(function () {
     config([

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Rawilk\Settings\Support\ValueSerializers\JsonValueSerializer;
+use AgentSoftware\Settings\Support\ValueSerializers\JsonValueSerializer;
 
 beforeEach(function () {
     $this->serializer = new JsonValueSerializer;

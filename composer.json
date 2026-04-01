@@ -1,14 +1,14 @@
 {
-    "name": "rawilk/laravel-settings",
+    "name": "agentsoftware/laravel-settings",
     "description": "Store Laravel application settings in the database.",
     "keywords": [
-        "rawilk",
+        "agentsoftware",
         "laravel-settings",
         "settings",
         "database settings",
         "eloquent model settings"
     ],
-    "homepage": "https://github.com/rawilk/laravel-settings",
+    "homepage": "https://github.com/agentsoftware/laravel-settings",
     "license": "MIT",
     "authors": [
         {
@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rawilk\\Settings\\": "src"
+            "AgentSoftware\\Settings\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -41,7 +41,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Rawilk\\Settings\\Tests\\": "tests"
+            "AgentSoftware\\Settings\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -60,11 +60,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rawilk\\Settings\\SettingsServiceProvider"
+                "AgentSoftware\\Settings\\SettingsServiceProvider"
             ],
             "aliases": {
-                "Settings": "Rawilk\\Settings\\Facades\\Settings",
-                "SettingsFactory": "Rawilk\\Settings\\Drivers\\Factory"
+                "Settings": "AgentSoftware\\Settings\\Facades\\Settings",
+                "SettingsFactory": "AgentSoftware\\Settings\\Drivers\\Factory"
             }
         }
     },

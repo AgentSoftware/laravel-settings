@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Rawilk\Settings\Drivers\DatabaseDriver;
+use AgentSoftware\Settings\Drivers\DatabaseDriver;
 
 /**
  * Note: Setting `false` as the team id in some calls is essentially like setting it to `false` in the config file.

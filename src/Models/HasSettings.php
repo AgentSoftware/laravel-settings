@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Models;
+namespace AgentSoftware\Settings\Models;
 
+use AgentSoftware\Settings\Facades\Settings as SettingsFacade;
+use AgentSoftware\Settings\Settings;
+use AgentSoftware\Settings\Support\Context;
+use AgentSoftware\Settings\Support\KeyGenerators\Md5KeyGenerator;
 use Illuminate\Database\Eloquent\Model;
-use Rawilk\Settings\Facades\Settings as SettingsFacade;
-use Rawilk\Settings\Settings;
-use Rawilk\Settings\Support\Context;
-use Rawilk\Settings\Support\KeyGenerators\Md5KeyGenerator;
 
 /**
  * @mixin Model

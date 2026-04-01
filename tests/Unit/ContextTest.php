@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Rawilk\Settings\Exceptions\InvalidContextValue;
-use Rawilk\Settings\Support\Context;
+use AgentSoftware\Settings\Exceptions\InvalidContextValue;
+use AgentSoftware\Settings\Support\Context;
 
 it('serializes values when created', function () {
     $context = new Context(['test' => 'value', 'a' => 'b']);

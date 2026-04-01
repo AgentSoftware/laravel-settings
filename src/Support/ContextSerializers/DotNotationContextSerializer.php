@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Support\ContextSerializers;
+namespace AgentSoftware\Settings\Support\ContextSerializers;
 
-use Rawilk\Settings\Contracts\ContextSerializer as ContextSerializerContract;
-use Rawilk\Settings\Support\Context;
+use AgentSoftware\Settings\Contracts\ContextSerializer as ContextSerializerContract;
+use AgentSoftware\Settings\Support\Context;
 
 class DotNotationContextSerializer implements ContextSerializerContract
 {

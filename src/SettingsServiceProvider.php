@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings;
+namespace AgentSoftware\Settings;
 
-use Rawilk\Settings\Contracts\Setting as SettingContract;
-use Rawilk\Settings\Drivers\Factory;
-use Rawilk\Settings\Support\ContextSerializers\ContextSerializer;
-use Rawilk\Settings\Support\KeyGenerators\Md5KeyGenerator;
-use Rawilk\Settings\Support\ValueSerializers\ValueSerializer;
+use AgentSoftware\Settings\Contracts\Setting as SettingContract;
+use AgentSoftware\Settings\Drivers\Factory;
+use AgentSoftware\Settings\Support\ContextSerializers\ContextSerializer;
+use AgentSoftware\Settings\Support\KeyGenerators\Md5KeyGenerator;
+use AgentSoftware\Settings\Support\ValueSerializers\ValueSerializer;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Drivers;
+namespace AgentSoftware\Settings\Drivers;
 
+use AgentSoftware\Settings\Contracts\Driver;
+use AgentSoftware\Settings\Contracts\Setting;
 use Illuminate\Contracts\Support\Arrayable;
-use Rawilk\Settings\Contracts\Driver;
-use Rawilk\Settings\Contracts\Setting;
 
 class EloquentDriver implements Driver
 {

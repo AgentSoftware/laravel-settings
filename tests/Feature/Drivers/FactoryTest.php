@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use Rawilk\Settings\Drivers\DatabaseDriver;
-use Rawilk\Settings\Drivers\EloquentDriver;
-use Rawilk\Settings\Facades\Settings;
-use Rawilk\Settings\Tests\Support\Drivers\CustomDriver;
+use AgentSoftware\Settings\Drivers\DatabaseDriver;
+use AgentSoftware\Settings\Drivers\EloquentDriver;
+use AgentSoftware\Settings\Facades\Settings;
+use AgentSoftware\Settings\Tests\Support\Drivers\CustomDriver;
 
 beforeEach(function () {
     config([

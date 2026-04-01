@@ -28,7 +28,7 @@ app('SettingsFactory')->extend('custom', fn ($app, $config) => new CustomDriver(
 app('SettingsFactory')->setDefaultDriver('custom');
 ```
 
-Any custom drivers you make must implement the `Rawilk\Settings\Contracts\Driver` interface. Here is what
+Any custom drivers you make must implement the `AgentSoftware\Settings\Contracts\Driver` interface. Here is what
 the interface looks like:
 
 ```php
@@ -36,7 +36,7 @@ the interface looks like:
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Contracts;
+namespace AgentSoftware\Settings\Contracts;
 
 use Illuminate\Contracts\Support\Arrayable;
 
