@@ -159,7 +159,7 @@ the user model from above to be unserialized as well:
     \Carbon\Carbon::class,
     \Carbon\CarbonImmutable::class,
     \Illuminate\Support\Carbon::class,
-    
+
     // Add this line
     App\Models\User::class,
 ],

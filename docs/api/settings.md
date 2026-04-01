@@ -125,7 +125,7 @@ public function flush($keys = null): void
 
 ```php
 /**
- * Retrieve the current team id for settings. 
+ * Retrieve the current team id for settings.
  */
 public function getTeamId(): mixed;
 ```
@@ -135,7 +135,7 @@ public function getTeamId(): mixed;
 ```php
 /**
  * Set the current team id for teams/groups support.
- * 
+ *
  * @param Model|int|null|string $id
  */
 public function setTeamId(mixed $id): Settings;
@@ -145,7 +145,7 @@ public function setTeamId(mixed $id): Settings;
 
 ```php
 /**
- * Use a team for a single call.   
+ * Use a team for a single call.
  */
 public function usingTeam(mixed $teamId): Settings;
 ```
@@ -154,7 +154,7 @@ public function usingTeam(mixed $teamId): Settings;
 
 ```php
 /**
- * Perform a single settings call without a team context. 
+ * Perform a single settings call without a team context.
  */
 public function withoutTeams(): Settings;
 ```

@@ -73,12 +73,12 @@ If you discover any security related issues, please email randall@randallwilk.de
 
 ## Credits
 
--   [Randall Wilk](https://github.com/agentsoftware)
--   [All Contributors](../../contributors)
+- [Randall Wilk](https://github.com/agentsoftware)
+- [All Contributors](../../contributors)
 
 ## Alternatives
 
--   [spatie/laravel-settings](https://github.com/spatie/laravel-settings)
+- [spatie/laravel-settings](https://github.com/spatie/laravel-settings)
 
 ## Disclaimer
 

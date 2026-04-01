@@ -6,11 +6,11 @@ All notable changes to `laravel-settings` will be documented in this file
 
 ### What's Changed
 
-* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/75
-* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/77
-* [Chore]: Remove Larastan by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/78
-* Add Laravel 12.x support by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/79
-* Add php 8.4 support by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/80
+- Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/75
+- Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/77
+- [Chore]: Remove Larastan by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/78
+- Add Laravel 12.x support by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/79
+- Add php 8.4 support by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/80
 
 **Full Changelog**: https://github.com/agentsoftware/laravel-settings/compare/v3.4.0...v3.4.1
 
@@ -18,9 +18,9 @@ All notable changes to `laravel-settings` will be documented in this file
 
 ### What's Changed
 
-* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/63
-* [Feature]: Hash key generator by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/68
-* Bump dependabot/fetch-metadata from 1.6.0 to 2.2.0 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/66
+- Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/63
+- [Feature]: Hash key generator by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/68
+- Bump dependabot/fetch-metadata from 1.6.0 to 2.2.0 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/66
 
 **Full Changelog**: https://github.com/agentsoftware/laravel-settings/compare/v3.3.1...v3.4.0
 
@@ -28,16 +28,16 @@ All notable changes to `laravel-settings` will be documented in this file
 
 ### What's Changed
 
-* Fix typo by @lakuapik in https://github.com/agentsoftware/laravel-settings/pull/51
-* Bump aglipanci/laravel-pint-action from 2.3.0 to 2.3.1 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/52
-* Added support for larvael 11.x by @demianottema in https://github.com/agentsoftware/laravel-settings/pull/58
-* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/59
-* Finish Laravel 11.x Compatibility Update by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/60
+- Fix typo by @lakuapik in https://github.com/agentsoftware/laravel-settings/pull/51
+- Bump aglipanci/laravel-pint-action from 2.3.0 to 2.3.1 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/52
+- Added support for larvael 11.x by @demianottema in https://github.com/agentsoftware/laravel-settings/pull/58
+- Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/agentsoftware/laravel-settings/pull/59
+- Finish Laravel 11.x Compatibility Update by @agentsoftware in https://github.com/agentsoftware/laravel-settings/pull/60
 
 ### New Contributors
 
-* @lakuapik made their first contribution in https://github.com/agentsoftware/laravel-settings/pull/51
-* @demianottema made their first contribution in https://github.com/agentsoftware/laravel-settings/pull/58
+- @lakuapik made their first contribution in https://github.com/agentsoftware/laravel-settings/pull/51
+- @demianottema made their first contribution in https://github.com/agentsoftware/laravel-settings/pull/58
 
 **Full Changelog**: https://github.com/agentsoftware/laravel-settings/compare/v3.3.0...v3.3.1
 
@@ -161,7 +161,7 @@ All notable changes to `laravel-settings` will be documented in this file
 
 ### Updated
 
-- Add support for Laravel 9.*
+- Add support for Laravel 9.\*
 - Add support for PHP 8.1
 
 ## 2.0.0 - 2020-12-01
