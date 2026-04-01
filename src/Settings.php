@@ -2,8 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings;
+namespace AgentSoftware\Settings;
 
+use AgentSoftware\Settings\Contracts\Driver;
+use AgentSoftware\Settings\Contracts\KeyGenerator;
+use AgentSoftware\Settings\Contracts\ValueSerializer;
+use AgentSoftware\Settings\Events\SettingsFlushed;
+use AgentSoftware\Settings\Events\SettingWasDeleted;
+use AgentSoftware\Settings\Events\SettingWasStored;
+use AgentSoftware\Settings\Exceptions\InvalidBulkValueResult;
+use AgentSoftware\Settings\Exceptions\InvalidEnumType;
+use AgentSoftware\Settings\Exceptions\InvalidKeyGenerator;
+use AgentSoftware\Settings\Support\Context;
+use AgentSoftware\Settings\Support\KeyGenerators\HashKeyGenerator;
+use AgentSoftware\Settings\Support\KeyGenerators\Md5KeyGenerator;
 use BackedEnum;
 use Illuminate\Contracts\Cache\Repository as Cache;
 use Illuminate\Contracts\Encryption\Encrypter;
@@ -11,18 +23,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
-use Rawilk\Settings\Contracts\Driver;
-use Rawilk\Settings\Contracts\KeyGenerator;
-use Rawilk\Settings\Contracts\ValueSerializer;
-use Rawilk\Settings\Events\SettingsFlushed;
-use Rawilk\Settings\Events\SettingWasDeleted;
-use Rawilk\Settings\Events\SettingWasStored;
-use Rawilk\Settings\Exceptions\InvalidBulkValueResult;
-use Rawilk\Settings\Exceptions\InvalidEnumType;
-use Rawilk\Settings\Exceptions\InvalidKeyGenerator;
-use Rawilk\Settings\Support\Context;
-use Rawilk\Settings\Support\KeyGenerators\HashKeyGenerator;
-use Rawilk\Settings\Support\KeyGenerators\Md5KeyGenerator;
 
 class Settings
 {

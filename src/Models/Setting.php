@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Models;
+namespace AgentSoftware\Settings\Models;
 
+use AgentSoftware\Settings\Contracts\Setting as SettingContract;
+use AgentSoftware\Settings\Facades\Settings;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
-use Rawilk\Settings\Contracts\Setting as SettingContract;
-use Rawilk\Settings\Facades\Settings;
 
 /**
  * @property int $id

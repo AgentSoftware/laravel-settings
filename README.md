@@ -1,12 +1,12 @@
 # Settings for Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rawilk/laravel-settings.svg?style=flat-square)](https://packagist.org/packages/rawilk/laravel-settings)
-![Tests](https://github.com/rawilk/laravel-settings/workflows/Tests/badge.svg?style=flat-square)
-[![Total Downloads](https://img.shields.io/packagist/dt/rawilk/laravel-settings.svg?style=flat-square)](https://packagist.org/packages/rawilk/laravel-settings)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/rawilk/laravel-settings?style=flat-square)](https://packagist.org/packages/rawilk/laravel-settings)
-[![License](https://img.shields.io/github/license/rawilk/laravel-settings?style=flat-square)](https://github.com/rawilk/laravel-settings/blob/main/LICENSE.md)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/agentsoftware/laravel-settings.svg?style=flat-square)](https://packagist.org/packages/agentsoftware/laravel-settings)
+![Tests](https://github.com/agentsoftware/laravel-settings/workflows/Tests/badge.svg?style=flat-square)
+[![Total Downloads](https://img.shields.io/packagist/dt/agentsoftware/laravel-settings.svg?style=flat-square)](https://packagist.org/packages/agentsoftware/laravel-settings)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/agentsoftware/laravel-settings?style=flat-square)](https://packagist.org/packages/agentsoftware/laravel-settings)
+[![License](https://img.shields.io/github/license/agentsoftware/laravel-settings?style=flat-square)](https://github.com/agentsoftware/laravel-settings/blob/main/LICENSE.md)
 
-![social image](https://banners.beyondco.de/Settings%20for%20Laravel.png?theme=light&packageManager=composer+require&packageName=rawilk%2Flaravel-settings&pattern=architect&style=style_1&description=Store+Laravel+application+settings+in+the+database.&md=1&showWatermark=0&fontSize=100px&images=cog)
+![social image](https://banners.beyondco.de/Settings%20for%20Laravel.png?theme=light&packageManager=composer+require&packageName=agentsoftware%2Flaravel-settings&pattern=architect&style=style_1&description=Store+Laravel+application+settings+in+the+database.&md=1&showWatermark=0&fontSize=100px&images=cog)
 
 Settings for Laravel allows you to store your application settings in the database. It works alongside of the built-in configuration system that Laravel offers. With this package, you can store application specific settings that wouldn't make sense to store in a configuration file, or that you want end-users to be able to update through your application's UI.
 
@@ -35,7 +35,7 @@ For documentation, please visit: https://randallwilk.dev/docs/laravel-settings
 You can install the package via composer:
 
 ```bash
-composer require rawilk/laravel-settings
+composer require agentsoftware/laravel-settings
 ```
 
 You can publish and run the migrations with:
@@ -51,7 +51,7 @@ You can publish the config file with:
 php artisan vendor:publish --tag="settings-config"
 ```
 
-You can view the default configuration here: https://github.com/rawilk/laravel-settings/blob/main/config/settings.php
+You can view the default configuration here: https://github.com/agentsoftware/laravel-settings/blob/main/config/settings.php
 
 ## Testing
 
@@ -73,7 +73,7 @@ If you discover any security related issues, please email randall@randallwilk.de
 
 ## Credits
 
--   [Randall Wilk](https://github.com/rawilk)
+-   [Randall Wilk](https://github.com/agentsoftware)
 -   [All Contributors](../../contributors)
 
 ## Alternatives

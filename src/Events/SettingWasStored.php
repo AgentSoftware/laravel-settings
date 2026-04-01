@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Events;
+namespace AgentSoftware\Settings\Events;
 
+use AgentSoftware\Settings\Support\Context;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Rawilk\Settings\Support\Context;
 
 final class SettingWasStored
 {

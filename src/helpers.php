@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Rawilk\Settings\Settings;
-use Rawilk\Settings\Support\Context;
+use AgentSoftware\Settings\Settings;
+use AgentSoftware\Settings\Support\Context;
 
 if (! function_exists('settings')) {
     function settings($key = null, $default = null, $context = null)

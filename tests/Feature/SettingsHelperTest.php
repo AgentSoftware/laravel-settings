@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
+use AgentSoftware\Settings\Facades\Settings as SettingsFacade;
+use AgentSoftware\Settings\Settings;
+use AgentSoftware\Settings\Support\Context;
 use Illuminate\Support\Facades\DB;
-use Rawilk\Settings\Facades\Settings as SettingsFacade;
-use Rawilk\Settings\Settings;
-use Rawilk\Settings\Support\Context;
 
 beforeEach(function () {
     config([

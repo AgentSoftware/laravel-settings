@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
+use AgentSoftware\Settings\Facades\Settings;
+use AgentSoftware\Settings\Tests\TestCase;
 use Illuminate\Support\Facades\DB;
-use Rawilk\Settings\Facades\Settings;
-use Rawilk\Settings\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 

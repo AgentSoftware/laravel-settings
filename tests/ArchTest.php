@@ -2,48 +2,48 @@
 
 declare(strict_types=1);
 
+use AgentSoftware\Settings\Contracts\ContextSerializer;
+use AgentSoftware\Settings\Contracts\Driver;
+use AgentSoftware\Settings\Contracts\KeyGenerator;
+use AgentSoftware\Settings\Contracts\ValueSerializer;
+use AgentSoftware\Settings\Drivers\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Facade;
-use Rawilk\Settings\Contracts\ContextSerializer;
-use Rawilk\Settings\Contracts\Driver;
-use Rawilk\Settings\Contracts\KeyGenerator;
-use Rawilk\Settings\Contracts\ValueSerializer;
-use Rawilk\Settings\Drivers\Factory;
 
 it('will not use debugging functions')
     ->expect(['dd', 'dump', 'ray', 'var_dump', 'ddd'])
     ->each->not->toBeUsed();
 
 test('strict types are used')
-    ->expect('Rawilk\Settings')
+    ->expect('AgentSoftware\Settings')
     ->toUseStrictTypes();
 
 test('only interfaces are placed in the contracts directory')
-    ->expect('Rawilk\Settings\Contracts')
+    ->expect('AgentSoftware\Settings\Contracts')
     ->toBeInterfaces();
 
 test('each driver implements the Driver contract')
-    ->expect('Rawilk\Settings\Drivers')
+    ->expect('AgentSoftware\Settings\Drivers')
     ->classes()
     ->toImplement(Driver::class)->ignoring(Factory::class)
     ->toHaveSuffix('Driver')->ignoring(Factory::class);
 
 test('only facades are used in the Facades directory')
-    ->expect('Rawilk\Settings\Facades')
+    ->expect('AgentSoftware\Settings\Facades')
     ->toExtend(Facade::class)
     ->classes()
     ->not->toHaveSuffix('Facade');
 
 test('models are configured correctly and are extendable')
-    ->expect('Rawilk\Settings\Models')
+    ->expect('AgentSoftware\Settings\Models')
     ->classes()
     ->toExtend(Model::class)
     ->not->toBeFinal();
 
 test('context serializers are configured correctly')
-    ->expect('Rawilk\Settings\Support\ContextSerializers')
+    ->expect('AgentSoftware\Settings\Support\ContextSerializers')
     ->toBeClasses()
     ->classes()
     ->toImplement(ContextSerializer::class)
@@ -51,7 +51,7 @@ test('context serializers are configured correctly')
     ->toHaveSuffix('Serializer');
 
 test('key generators are configured correctly')
-    ->expect('Rawilk\Settings\Support\KeyGenerators')
+    ->expect('AgentSoftware\Settings\Support\KeyGenerators')
     ->toBeClasses()
     ->classes()
     ->toImplement(KeyGenerator::class)
@@ -59,7 +59,7 @@ test('key generators are configured correctly')
     ->toHaveSuffix('Generator');
 
 test('value serializers are configured correctly')
-    ->expect('Rawilk\Settings\Support\ValueSerializers')
+    ->expect('AgentSoftware\Settings\Support\ValueSerializers')
     ->toBeClasses()
     ->classes()
     ->toImplement(ValueSerializer::class)
@@ -67,7 +67,7 @@ test('value serializers are configured correctly')
     ->toHaveSuffix('Serializer');
 
 test('events are configured correctly')
-    ->expect('Rawilk\Settings\Events')
+    ->expect('AgentSoftware\Settings\Events')
     ->toBeClasses()
     ->classes()
     ->toExtendNothing()

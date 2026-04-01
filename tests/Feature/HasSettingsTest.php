@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-use Rawilk\Settings\Facades\Settings;
-use Rawilk\Settings\Support\Context;
-use Rawilk\Settings\Support\ContextSerializers\DotNotationContextSerializer;
-use Rawilk\Settings\Support\KeyGenerators\ReadableKeyGenerator;
-use Rawilk\Settings\Tests\Support\Models\Company;
-use Rawilk\Settings\Tests\Support\Models\CustomUser;
-use Rawilk\Settings\Tests\Support\Models\User;
+use AgentSoftware\Settings\Facades\Settings;
+use AgentSoftware\Settings\Support\Context;
+use AgentSoftware\Settings\Support\ContextSerializers\DotNotationContextSerializer;
+use AgentSoftware\Settings\Support\KeyGenerators\ReadableKeyGenerator;
+use AgentSoftware\Settings\Tests\Support\Models\Company;
+use AgentSoftware\Settings\Tests\Support\Models\CustomUser;
+use AgentSoftware\Settings\Tests\Support\Models\User;
 
 beforeEach(function () {
     migrateTestTables();

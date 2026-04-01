@@ -5,7 +5,7 @@ sort: 3
 
 ## Introduction
 
-Starting with version `2.1.0`, models can easily have their own settings by using the `\Rawilk\Settings\Models\HasSettings` trait. This trait will automatically create a new `\Rawilk\Settings\Support\Context` object with properties that uniquely identify the model. See the [context](#user-content-context) section for more information.
+Starting with version `2.1.0`, models can easily have their own settings by using the `\AgentSoftware\Settings\Models\HasSettings` trait. This trait will automatically create a new `\AgentSoftware\Settings\Support\Context` object with properties that uniquely identify the model. See the [context](#user-content-context) section for more information.
 
 ## Usage
 
@@ -13,7 +13,7 @@ First, use the `HasSettings` trait in your Eloquent model.
 
 ```php
 // ...
-use Rawilk\Settings\Models\HasSettings;
+use AgentSoftware\Settings\Models\HasSettings;
 
 class User extends Model
 {
@@ -21,7 +21,7 @@ class User extends Model
 }
 ```
 
-Now whenever you need to interact with settings that are specific to that model, you can call `settings()`, which will return an instance of `\Rawilk\Settings\Settings`. This is essentially the same as calling `\Rawilk\Settings\Facades\Settings::context(...)`. This will allow you to do anything you could on the facade, but specifically for the model.
+Now whenever you need to interact with settings that are specific to that model, you can call `settings()`, which will return an instance of `\AgentSoftware\Settings\Settings`. This is essentially the same as calling `\AgentSoftware\Settings\Facades\Settings::context(...)`. This will allow you to do anything you could on the facade, but specifically for the model.
 
 To store a setting:
 
@@ -39,7 +39,7 @@ $user->settings()->get('foo');
 
 ## Context
 
-By default, when `context()` is called on a model, it will create a new `\Rawilk\Settings\Support\Context` object with the model's class and ID. If you need to override this behavior, you may override the `context` method on your model, but make sure you return a `Context` object. If you just need to add additional uniquely identifying properties, you may implement a `contextArguments` method on your model that returns an array of key/value pairs of data that is unique to a a model instance. These key/value pairs will be merged into the context object with your model's class and ID.
+By default, when `context()` is called on a model, it will create a new `\AgentSoftware\Settings\Support\Context` object with the model's class and ID. If you need to override this behavior, you may override the `context` method on your model, but make sure you return a `Context` object. If you just need to add additional uniquely identifying properties, you may implement a `contextArguments` method on your model that returns an array of key/value pairs of data that is unique to a a model instance. These key/value pairs will be merged into the context object with your model's class and ID.
 
 ```php
 protected function contextArguments(): array
@@ -58,7 +58,7 @@ If you wish to disable this behavior, you can simply set a static boolean `$flus
 ```php
 namespace App\Models;
 
-use Rawilk\Settings\Models\HasSettings;
+use AgentSoftware\Settings\Models\HasSettings;
 use Illuminate\Database\Eloquent\Model;
 
 class User extends Model

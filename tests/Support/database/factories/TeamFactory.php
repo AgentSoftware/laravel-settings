@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Tests\Support\database\factories;
+namespace AgentSoftware\Settings\Tests\Support\database\factories;
 
+use AgentSoftware\Settings\Tests\Support\Models\Team;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Rawilk\Settings\Tests\Support\Models\Team;
 
 /**
  * @extends Factory<Team>

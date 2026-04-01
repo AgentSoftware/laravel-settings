@@ -65,14 +65,14 @@ The following configuration options should be added to your `config/settings.php
     | into a string, which gets appended to a setting key in the database.
     |
     | Any custom serializer you use must implement the
-    | \Rawilk\Settings\Contracts\ContextSerializer interface.
+    | \AgentSoftware\Settings\Contracts\ContextSerializer interface.
     |
     | Supported:
-    | - \Rawilk\Settings\Support\ContextSerializers\ContextSerializer (default)
-    | - \Rawilk\Settings\Support\ContextSerializers\DotNotationContextSerializer
+    | - \AgentSoftware\Settings\Support\ContextSerializers\ContextSerializer (default)
+    | - \AgentSoftware\Settings\Support\ContextSerializers\DotNotationContextSerializer
     |
     */
-    'context_serializer' => \Rawilk\Settings\Support\ContextSerializers\ContextSerializer::class,
+    'context_serializer' => \AgentSoftware\Settings\Support\ContextSerializers\ContextSerializer::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -83,14 +83,14 @@ The following configuration options should be added to your `config/settings.php
     | setting.
     |
     | Any custom key generator you use must implement the
-    | \Rawilk\Settings\Contracts\KeyGenerator interface.
+    | \AgentSoftware\Settings\Contracts\KeyGenerator interface.
     |
     | Supported:
-    | - \Rawilk\Settings\Support\KeyGenerators\ReadableKeyGenerator
-    | - \Rawilk\Settings\Support\KeyGenerators\Md5KeyGenerator (default)
+    | - \AgentSoftware\Settings\Support\KeyGenerators\ReadableKeyGenerator
+    | - \AgentSoftware\Settings\Support\KeyGenerators\Md5KeyGenerator (default)
     |
     */
-    'key_generator' => \Rawilk\Settings\Support\KeyGenerators\Md5KeyGenerator::class,
+    'key_generator' => \AgentSoftware\Settings\Support\KeyGenerators\Md5KeyGenerator::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -102,10 +102,10 @@ The following configuration options should be added to your `config/settings.php
     | instead if you want to store the values as json instead.
     |
     | Any custom value serializer you use must implement the
-    | \Rawilk\Settings\Contracts\ValueSerializer interface.
+    | \AgentSoftware\Settings\Contracts\ValueSerializer interface.
     |
     */
-    'value_serializer' => \Rawilk\Settings\Support\ValueSerializers\ValueSerializer::class,
+    'value_serializer' => \AgentSoftware\Settings\Support\ValueSerializers\ValueSerializer::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -146,7 +146,7 @@ what the interface looks like now:
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Contracts;
+namespace AgentSoftware\Settings\Contracts;
 
 use Illuminate\Contracts\Support\Arrayable;
 
@@ -176,7 +176,7 @@ New methods for `getAll()` and `flush()` have been added as well. Here's what th
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Contracts;
+namespace AgentSoftware\Settings\Contracts;
 
 use Illuminate\Contracts\Support\Arrayable;
 
@@ -209,7 +209,7 @@ this model, you may need to update your code to be compatible with the new model
 
 ## Setting Service
 
-Several changes have been made to the underlying `Rawilk\Settings\Settings` service class. For most people there shouldn't be any action required,
+Several changes have been made to the underlying `AgentSoftware\Settings\Settings` service class. For most people there shouldn't be any action required,
 however if you are adding macros to the class, you may need to tweak them to be compatible with updated class.
 
 ## Cache Keys

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Rawilk\Settings\Support;
+namespace AgentSoftware\Settings\Support;
 
+use AgentSoftware\Settings\Exceptions\InvalidContextValue;
 use Countable;
 use Illuminate\Contracts\Support\Arrayable;
 use OutOfBoundsException;
-use Rawilk\Settings\Exceptions\InvalidContextValue;
 
 class Context implements Arrayable, Countable
 {
