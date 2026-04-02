@@ -38,5 +38,7 @@ it('works with other context serializers', function () {
         'id' => 123,
     ]);
 
-    expect($this->keyGenerator->generate('my-key', $context))->toBe('my-key:c:::' . serialize($context));
+    $serializer = new ContextSerializer;
+
+    expect($this->keyGenerator->generate('my-key', $context))->toBe('my-key:c:::' . $serializer->serialize($context));
 });

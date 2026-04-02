@@ -9,6 +9,7 @@ use AgentSoftware\Settings\Drivers\Factory;
 use AgentSoftware\Settings\Support\ContextSerializers\ContextSerializer;
 use AgentSoftware\Settings\Support\KeyGenerators\Md5KeyGenerator;
 use AgentSoftware\Settings\Support\ValueSerializers\ValueSerializer;
+use Rawilk\Settings\Support\Context;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -32,6 +33,7 @@ class SettingsServiceProvider extends PackageServiceProvider
 
     public function packageRegistered(): void
     {
+        $this->registerClassAliases();
         $this->registerSettings();
     }
 
@@ -41,6 +43,16 @@ class SettingsServiceProvider extends PackageServiceProvider
             Settings::class,
             'SettingsFactory',
         ];
+    }
+
+    protected function registerClassAliases(): void
+    {
+        if (! class_exists(Context::class, false)) {
+            class_alias(
+                Support\Context::class,
+                'Rawilk\Settings\Support\Context',
+            );
+        }
     }
 
     protected function bootModelBindings(): void

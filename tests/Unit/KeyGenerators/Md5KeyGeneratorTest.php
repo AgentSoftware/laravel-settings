@@ -22,8 +22,10 @@ it('generates an md5 hash of a key and context object', function () {
         'id' => 123,
     ]);
 
+    $serializer = new ContextSerializer;
+
     expect($this->keyGenerator->generate('my-key', $context))
-        ->toBe(md5('my-key' . serialize($context)));
+        ->toBe(md5('my-key' . $serializer->serialize($context)));
 });
 
 it('works with other context serializers', function () {
