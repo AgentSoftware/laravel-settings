@@ -11,6 +11,14 @@ class ContextSerializer implements ContextSerializerContract
 {
     public function serialize(?Context $context = null): string
     {
-        return serialize($context);
+        $serialized = serialize($context);
+
+        // Maintain backward compatibility with the old Rawilk namespace
+        // so that key generation produces identical keys for existing data.
+        return str_replace(
+            sprintf('O:%d:"%s"', strlen('AgentSoftware\\Settings\\Support\\Context'), 'AgentSoftware\\Settings\\Support\\Context'),
+            sprintf('O:%d:"%s"', strlen('Rawilk\\Settings\\Support\\Context'), 'Rawilk\\Settings\\Support\\Context'),
+            $serialized,
+        );
     }
 }

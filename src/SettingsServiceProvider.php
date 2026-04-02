@@ -32,6 +32,7 @@ class SettingsServiceProvider extends PackageServiceProvider
 
     public function packageRegistered(): void
     {
+        $this->registerClassAliases();
         $this->registerSettings();
     }
 
@@ -41,6 +42,16 @@ class SettingsServiceProvider extends PackageServiceProvider
             Settings::class,
             'SettingsFactory',
         ];
+    }
+
+    protected function registerClassAliases(): void
+    {
+        if (! class_exists(\Rawilk\Settings\Support\Context::class, false)) {
+            class_alias(
+                \AgentSoftware\Settings\Support\Context::class,
+                'Rawilk\Settings\Support\Context',
+            );
+        }
     }
 
     protected function bootModelBindings(): void
